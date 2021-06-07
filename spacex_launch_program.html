@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>spacex launch program</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+    <body>
+
+        <div class="d-flex justify-content-center page-loader">
+			<div class="spinner-border"
+				role="status" id="loading">
+				<span class="sr-only"><img src="images/grid-loader.gif" /></span>
+			</div>
+		</div>
+        
+        <div class="spacex-main">
+            <h1>spacex launch program</h1>
+            <div class="spacex-inner">
+                <aside>
+                    <div class="spacex-filter">
+                        <h2>Filters</h2>
+                       <div class="launch-year">
+                         <span>Launch Year</span>
+                         <div id="filter_btn" class="filter-btn">
+                         <button class="btn" onclick = "FilterByYear()">2006</button>
+                         <button class="btn" onclick = "FilterByYear()">2007</button>
+                         <button class="btn" onclick = "FilterByYear()">2008</button>
+                         <button class="btn">2009</button>
+                         <button class="btn">2010</button>
+                         <button class="btn">2011</button>
+                         <button class="btn">2012</button>
+                         <button class="btn">2013</button>
+                         <button class="btn">2014</button>
+                         <button class="btn">2015</button>
+                         <button class="btn">2016</button>
+                         <button class="btn">2017</button>
+                         <button class="btn">2018</button>
+                         <button class="btn">2019</button>
+                         <button class="btn">2020</button>
+                        </div>
+                       </div>
+                       <div class="succ-launch">
+                          <span>Successfull Launch</span>
+                          <div class="filter-btn launch-btn">
+                          <button class="btn">True</button>
+                          <button class="btn">False</button>
+                        </div>
+                       </div>
+                       <div class="succ-landing">
+                        <span>Successfull Landing</span>
+                        <div class="filter-btn land-btn">
+                            <button class="btn">True</button>
+                            <button class="btn">False</button>
+                            </div>
+                       </div>
+                    </div>
+                </aside>
+                <div class="spacex-sec">
+                  <div id="display_spacex" class="spacex-sec-inner">
+                  </div>
+                </div>
+                <h1 class="dev-by">Developed By: Om Prakash</h1>
+            </div>
+        
+        </div>
+    </body>
+    <script src="js/main.js"></script>
+</html>
